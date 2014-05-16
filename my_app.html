@@ -5,6 +5,7 @@
 <body>
   {{> nav_bar}}
   {{> jumbotron}}
+  {{> buttonGroup}}
 </body>
 
 <template name="jumbotron">
@@ -14,6 +15,20 @@
   <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
 </div>
 </template>
+
+
+<template name="buttonGroup">
+<div class="btn-group btn-group-justified">
+	<div class="btn-group">
+  	<button type="button" class="btn btn-default">Left</button>
+  	<button type="button" class="btn btn-default">Middle</button>
+  	<button type="button" class="btn btn-default">Right</button>
+	</div>
+</div>
+
+</template>
+
+
 
 <template name="nav_bar">
 <nav class="navbar navbar-default" role="navigation">
